@@ -33,12 +33,65 @@ window.addEventListener('click', function (e) {
 });
 
 // Overlay
-const elementclose = document.getElementsByClassName('overlay');
+// const elementclose = document.getElementsByClassName('overlay');
 
-for (let i = 0; i < elementclose.length; i++) {
-  elementclose[i].addEventListener('click', function () {
-    let url = window.location.href.substr(0, window.location.href.indexOf('#'));
-    window.location = url;
+// for (let i = 0; i < elementclose.length; i++) {
+//   elementclose[i].addEventListener('click', function () {
+//     let url = window.location.href.substr(0, window.location.href.indexOf('#'));
+//     window.location = url;
+//   });
+//   // document.location.href = 'index.html#portfolio';
+// }
+
+// Overlay
+// const elementclose = document.querySelector('#boostrap');
+
+// elementclose.addEventListener('click', function () {
+//   elementclose.classList.add('opacity-0');
+//   document.location.href = 'index.html#portfolio';
+//   // elemenClose.classList.add('flex');
+// });
+
+
+// const closeImage = document.querySelector('#kalkulator');
+
+// closeImage.addEventListener('click', function () {
+//   closeImage.classList.add('opacity-0');
+//   document.location.href = 'index.html#portfolio';
+//   // elemenClose.classList.add('flex');
+// });
+// const closegambar = document.querySelector('#ultah');
+
+// closegambar.addEventListener('click', function () {
+//   closegambar.classList.add('opacity-0');
+//   document.location.href = 'index.html#portfolio';
+//   // elemenClose.classList.add('flex');
+// });
+// const closeGambar = document.querySelector('#php');
+
+// closeGambar.addEventListener('click', function () {
+//   closeGambar.classList.add('opacity-0');
+//   document.location.href = 'index.html#portfolio';
+//   // elemenClose.classList.add('flex');
+// });
+
+const overlay = document.querySelectorAll('.overlay');
+
+for (let i = 0; i < overlay.length; i++) {
+  // const overlay = overlay[i];
+  // console.log(i);  
+  overlay[i].addEventListener('click', function(){
+    // overlay[i].classList.add('opacity-0');
+    document.location.href = 'index.html#portfolio';
   });
-  // document.location.href = 'index.html#portfolio';
 }
+
+// overlay.forEach(function(el){
+//   el.addEventListener('click', function(e){
+//     e.target.parentElement.classList.add('hidden');
+//     setTimeout(function() {
+//       e.target.parentElement.classList.remove('hidden');
+//     }, 500);
+//     // e.target.style.display = 'none';
+//   });
+// });

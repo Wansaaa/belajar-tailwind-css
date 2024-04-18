@@ -15,6 +15,17 @@ module.exports = {
       screens: {
         '2xl': '1320px',
       },
+
+      animation: {
+        zoom:'zoom 1s ease-in-out infinite'
+      },
+
+      keyframes: {
+        zoom: {
+          '0': { transform: scale(0), opacity: '0' },
+          '100%': { transform: scale(1), opacity: '1' },
+        },
+      },
     },
   },
   plugins: [],
